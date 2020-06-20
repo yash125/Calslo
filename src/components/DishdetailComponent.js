@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {Card, CardImg, CardImgOverlay, CardText, CardBody, CardTitle} from 'reactstrap';
 
+
 class DishDetail extends Component {
 
 constructor(props){
@@ -14,6 +15,7 @@ renderComments(comments){
         
         const cmt = comments.map(comment =>{
             return(
+
                 <li key = {comment.id}>
                     <p>{comment.comment}</p>
                     <p>-- {comment.author}</p>

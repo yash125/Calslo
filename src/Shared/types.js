@@ -12,7 +12,7 @@ export const TYPES =
             {
             id: 0,
             rating: 5,
-            comment: "",
+            comment: "Single Slot Booking feature introduced by CalSlo",
             author: "",
             date: ""
             },
@@ -47,8 +47,8 @@ export const TYPES =
         ]                        },
         {
         id: 1,
-        name:'Zucchipakoda',
-        image: 'assets/images/zucchipakoda.png',
+        name:'Multiple Slot Booking',
+        image: 'assets/images/multiple.jpg',
         category: 'appetizer',
         label:'',
         price:'1.99',

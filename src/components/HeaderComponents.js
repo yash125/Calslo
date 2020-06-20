@@ -42,7 +42,7 @@ class Header extends Component {
                             <NavLink className="nav-link"  to='/basic'><span className="fa fa-list fa-lg"></span> Features</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink className="nav-link" to='/contactus'><span className="fa fa-address-card fa-lg"></span> Contact Us</NavLink>
+                            <NavLink className="nav-link" to='/contactus'><span className="fa fa-calendar fa-lg"></span> Book a Slot</NavLink>
                         </NavItem>
                 </Nav>
                 </Collapse>

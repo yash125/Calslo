@@ -1,36 +1,91 @@
-import React from 'react';
+import React,{Component} from 'react';
+import {Button, Form,Label,Input,Col, FormGroup } from 'reactstrap';
 
-function Contact(props) {
-    return(
-        <div className="container">
-            <div className="row row-content">
-                <div className="col-12">
-                <h3>Location Information</h3>
+class Contact extends Component {
+
+    constructor(props){
+        super(props);
+
+        this.state={
+            Eventname: '',
+            Location: '',
+            Description: '',
+            Eventlink: '',
+            agree: false,
+            Contact: 'Tel'
+
+        };
+    }
+    render(){
+
+        return(
+            <div className="container">
+                <div className="row row-content">
+                    <div className="col-12">
+                    <h1>Book a slot?</h1>
+                    </div>
+                    
+                   
+                   
                 </div>
-                <div className="col-12 col-sm-4 offset-sm-1">
-                        <h5>Our Address</h5>
-                        <jumbotron>
-                        A-9 Karamchari Nagar<br />
-                        
-                        Bareilly<br />
-                        <i className="fa fa-phone"></i>: +918859815805<br />
-                        <i className="fa fa-fax"></i>: +918859815805<br />
-                        <i className="fa fa-envelope"></i>: <a href="mailto:kapooryash713@gmail.com">kapooryash713@gmail.com</a>
-                        </jumbotron>
-                </div>
-                <div className="col-12 col-sm-6 offset-sm-1">
-                    <h5>Map of our Location</h5>
-                </div>
-                <div className="col-12 col-sm-11 offset-sm-1">
-                    <div className="btn-group" role="group">
-                        <a role="button" className="btn btn-primary" href="tel:+918859815805"><i className="fa fa-phone"></i> Call</a>
-                        <a role="button" className="btn btn-info"><i className="fa fa-skype"></i> Skype</a>
-                        <a role="button" className="btn btn-success" href=""><i className="kapooryash713@gmail.com"></i> Email</a>
+                <div className="row row-content">
+                    
+                    <div className="col-12 col-md-9">
+                        <Form>
+                            <FormGroup row>
+                            <Label htmlFor="Eventname" md={2}>Event Name</Label>
+                                <Col md={10}>
+                                    <Input type="text" id="Eventname" name="Eventname"
+                                        placeholder="Event Name"
+                                        value={this.state.Eventname}
+                                        onChange={this.handleInputChange} />
+                                </Col>
+                            </FormGroup>
+                            <FormGroup row>
+                            <Label htmlFor="Location" md={2}>Location</Label>
+                                <Col md={10}>
+                                    <Input type="text" id="Location" name="Location"
+                                        placeholder="Location"
+                                        value={this.state.Locaction}
+                                        onChange={this.handleInputChange} />
+                                </Col>
+                            </FormGroup>
+                            <FormGroup row>
+                            <Label htmlFor="Description" md={2}>Description</Label>
+                                <Col md={10}>
+                                    <Input type="textarea" id="Description" name="Description"
+                                        rows="12"
+                                        value={this.state.Description}
+                                        onChange={this.handleInputChange} />
+                                </Col>
+                            </FormGroup>
+                            <FormGroup row>
+                            <Label htmlFor="Eventlink" md={2}>Event Link</Label>
+                                <Col md={10}>
+                                    <Input type="link" id="Eventlink" name="link"
+                                        placeholder="Meeting Link"
+                                        value={this.state.Eventlink}
+                                        onChange={this.handleInputChange} />
+                                </Col>
+                            </FormGroup>
+                            <FormGroup row>
+                            <Label htmlFor="contact" md={2}>Contact</Label>
+                                <Col md={10}>
+                                    <Input type="tel" id="telnum" name="telnum"
+                                        placeholder="Tel. number"
+                                        value={this.state.telnum}
+                                        onChange={this.handleInputChange} />
+                                </Col>
+                            </FormGroup>
+                        </Form>
+
                     </div>
                 </div>
             </div>
-        </div>
-    );
-}
+        );
+    }
+
+    }
+    
 
 export default Contact;

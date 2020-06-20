@@ -6,6 +6,7 @@ import DishDetail from './DishdetailComponent';
 import { TYPES } from '../Shared/types';
 import Header from './HeaderComponents';
 import Footer from './FooterComponents';
+import Contact from './ContactComponent';
 import { Switch, Route, Redirect } from 'react-router-dom';
 
 class Main extends Component {
@@ -33,6 +34,7 @@ class Main extends Component {
         <Switch>
               <Route path='/home' component={HomePage} />
               <Route exact path='/basic' component={() => <Basic types={this.state.types} />} />
+              <Route exact path='/contactus' component={Contact}  />
               <Redirect to="/home" />
           </Switch>
         

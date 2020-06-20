@@ -32,3 +32,10 @@ address{
 .navbar-dark {
     background-color: #0f0f0f;
 }
+.imgBackground {
+    background-image: url('D:/Bootstrap4/Calendar/calslo/src/images/calendar3.jpg');
+    filter: blur(5px);
+    background-repeat: no-repeat;
+    background-size:100% auto;
+    height: 480px;
+}

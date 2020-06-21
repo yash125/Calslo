@@ -97,7 +97,7 @@ class Contact extends Component {
         return(
             <div className="container">
                 <div className="row row-content">
-                    <div className="col-12">
+                    <div className="col-12 jpg">
                     <h1>Book a slot?</h1>
                     </div>
                     

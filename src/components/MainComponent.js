@@ -8,6 +8,7 @@ import Header from './HeaderComponents';
 import Footer from './FooterComponents';
 import Contact from './ContactComponent';
 import { Switch, Route, Redirect } from 'react-router-dom';
+import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 class Main extends Component {
 

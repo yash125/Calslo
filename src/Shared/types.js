@@ -7,7 +7,7 @@ export const TYPES =
         category: 'mains',
         label:'Single',
         price:'Free',
-        description:'.',
+        description:'Time Slots Booking Calendar is an appointment calendar and online booking system that allows clients to book appointments with you. The time slot calendar is suitable for both individual and group appointments. That makes it the perfect reservation system for booking appointments with hairdressers, therapists, private trainers, as well as arranging a spot in group classes. Setup and script integration are totally painless!',
         comments: [
             {
             id: 0,
@@ -52,7 +52,7 @@ export const TYPES =
         category: 'appetizer',
         label:'',
         price:'1.99',
-        description:'Deep fried Zucchini coated with mildly spiced Chickpea flour batter accompanied with a sweet-tangy tamarind sauce',
+        description:'Multiple bookings per time slot allows you to have multiple people book during the same available time slot. Set the maximum number allowed and YouCanBook.me will show that time as free until the number is hit.As you receive each booking in that your open time slot, it will appear as an individual event in your calendar. After your set number of bookings has been received, that time will no longer be available for booking in ColSlo. With Custom Availability you dont have to worry about "soaking up" the slots on all of your existing busy events on your calendar. To block out time simply delete that Custom Availability event from your linked calendar. ',
         comments: [
             {
             id: 0,
@@ -93,12 +93,12 @@ export const TYPES =
         },
         {
         id: 2,
-        name:'Vadonut',
-        image: 'assets/images/vadonut.png',
+        name:'Empower your whole team to have a streamlined and productive workflow',
+        image: 'assets/images/nova.jpg',
         category: 'appetizer',
         label:'New',
         price:'1.99',
-        description:'A quintessential ConFusion experience, is it a vada or is it a donut?',
+        description:'Offer a single view of varying event types, allowing invitees to schedule with the relevant person, topic or event.Get new and existing team members set up for efficient scheduling with useful event types.Eliminate expense reports from each team member with one easy payment that covers all users subscriptions.',
         comments: [
             {
             id: 0,
@@ -139,12 +139,12 @@ export const TYPES =
         },
         {
         id: 3,
-        name:'ElaiCheese Cake',
-        image: 'assets/images/elaicheesecake.png',
+        name:'Edit Existing Bookings',
+        image: 'assets/images/booking.png',
         category: 'dessert',
         label:'',
         price:'2.99',
-        description:'A delectable, semi-sweet New York Style Cheese Cake, with Graham cracker crust and spiced with Indian cardamoms',
+        description:'Enables editing of existing bookings by the admin or visitor, who made the booking.',
         comments: [
             {
             id: 0,

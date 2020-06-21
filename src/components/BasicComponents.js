@@ -3,6 +3,7 @@ import { Card, CardImg, CardImgOverlay, CardText, CardBody, CardTitle } from 're
 import { Media } from 'reactstrap';
 import Header from './HeaderComponents';
 import Footer from './FooterComponents';
+import { TYPES } from '../Shared/types';
 
 
         
@@ -12,6 +13,7 @@ class Basic extends Component {
         super(props);
         this.state = {
             selectedType : null,
+            
             
         };
     }
@@ -45,10 +47,22 @@ class Basic extends Component {
               <div  className="col-12 col-md-5 m-1">
                   
                 <Card key={type.id}
+                
                   onClick={() => this.props.onClick(type.id)}>
-                  <CardImg width="100%" src={type.image} alt={type.name} />
+                      <br/>
+                      <br/>
+                  <CardImg top width="50%" src={type.image} alt={type.name} />
+                  <CardBody>
+                          <hr/>
+                          
+                          
+
+                        <CardText>{type.description}</CardText>
+                        
+                        </CardBody>
                   <CardImgOverlay>
                       <CardTitle>{type.name}</CardTitle>
+                      
                   </CardImgOverlay>
                 </Card>
               </div>
